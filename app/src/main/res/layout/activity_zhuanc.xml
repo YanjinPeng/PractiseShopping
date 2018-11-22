@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ddff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#00ddff"
+        android:paddingTop="5dp"
+        >
+        <Button
+            android:id="@+id/title_back_zhuanchu"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/white_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="转出"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/zhuanchu_jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="转出记录"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d1d1d1"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对方账户   "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入手机号码/UID"
+            android:background="#ffffff"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d1d1d1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/zhuanchu_next"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#FF7F24"
+            android:text="下一步"
+            />
+        <Button
+            android:id="@+id/add_bank"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/zhuanchu_next"
+            android:text="积分兑换"
+            android:background="#00aaff"
+            />
+    </RelativeLayout>
+</LinearLayout>

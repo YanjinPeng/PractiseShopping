@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="2dp"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/classify_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v1"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:id="@+id/classify_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="服饰"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classify_layout2"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v2"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <TextView
+                    android:id="@+id/classify_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="餐饮"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classify_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v3"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <TextView
+                    android:id="@+id/classify_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="酒店"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classify_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v4"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <TextView
+                    android:id="@+id/classify_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="旅游"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/classify_layout5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v5"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="科技"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/classify_layout6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v6"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="养生"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classify_layout7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v7"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="美容"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classify_layout8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v8"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="特产"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/classify_layout9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v9"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="生鲜"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/classify_layout10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:paddingLeft="2dp">
+                <View
+                    android:id="@+id/classify_v10"
+                    android:layout_width="2dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#888888" />
+                <TextView
+                    android:id="@+id/classify_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="其他"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/right_classify"
+            layout="@layout/activity_classify_style"
+            />
+
+    </LinearLayout>
+</LinearLayout>

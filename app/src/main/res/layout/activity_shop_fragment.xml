@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#003355"
+    android:id="@+id/shop_frag_layout"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shop_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/shop_layout_bottom_home"/>
+    <include
+        android:id="@+id/shop_layout_bottom_home"
+        layout="@layout/shop_bottom_style"
+        />
+
+</RelativeLayout>

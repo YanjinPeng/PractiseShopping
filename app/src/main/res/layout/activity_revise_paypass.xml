@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ddff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#00ddff"
+        android:paddingTop="5dp"
+        >
+        <Button
+            android:id="@+id/resive_paypass_back"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/white_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="修改支付密码"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d1d1d1"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧密码"
+            android:textSize="21sp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/resive_paypass_old"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请输入旧密码"
+            android:background="#ffffff"
+            android:textColor="#777777"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d1d1d1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码"
+            android:textSize="21sp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/resive_paypass_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请输入新密码"
+            android:background="#ffffff"
+            android:textColor="#777777"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/revise_paypass_re"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="忘记支付密码?"
+            android:textColor="#ff7f24"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/revise_paypass_y"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="#FF7F24"
+        android:text="确定"
+        />
+</LinearLayout>

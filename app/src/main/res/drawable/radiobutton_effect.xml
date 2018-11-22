@@ -1,0 +1,9 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中效果-->
+    <item android:drawable="@drawable/rediobuttonc" android:state_pressed="true" />
+    <item android:drawable="@drawable/rediobuttonc" android:state_focused="true" />
+    <item android:drawable="@drawable/rediobuttonc" android:state_checked="true" />
+    <!--未选中效果-->
+    <item android:drawable="@drawable/raduiobutton"/>
+</selector>

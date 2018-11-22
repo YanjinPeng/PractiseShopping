@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_home"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#003355"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/bot_home"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:src="@drawable/home_style"
+                />
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:text="首页"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_below="@+id/bot_home" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_moeny"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#003355"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/bot_moeny"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:src="@drawable/moeny_style"
+                />
+            <TextView
+                android:id="@+id/moeny"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:text="资产"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_below="@+id/bot_moeny"
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#003355"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/bot_mine"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:src="@drawable/mine_style"
+            />
+        <TextView
+            android:id="@+id/mine"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:text="我的"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_below="@+id/bot_mine"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#003355"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/bot_shop"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:src="@drawable/shop_style"
+                />
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:text="商城"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_below="@+id/bot_shop"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+

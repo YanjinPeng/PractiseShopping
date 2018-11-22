@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/rediobuttonc"
+        android:state_pressed="true">
+    </item>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/rediobuttonc">
+    </item>
+    <item
+        android:drawable="@drawable/rediobuttonc"
+        android:state_focused="true">
+    </item>
+
+    <item android:drawable="@drawable/raduiobutton"></item>
+
+</selector>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:id="@+id/classify_layout_sview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服饰"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b1"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp"
+                >
+                <ImageView
+                    android:id="@+id/fushi_icon1"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/center_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="餐饮"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b2"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/center_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酒店"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b3"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon3"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/center_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="旅游"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b4"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/center_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科技"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b5"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone5"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon5"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="养生"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b6"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone6"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon6"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美容"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b7"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone7"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon7"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特产"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b8"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone8"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon8"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生鲜"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b9"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone9"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon9"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/listv_t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/listv_b10"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/listv_b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text=">"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:id="@+id/classify_gone10"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listv_b10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/fushi_icon10"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+

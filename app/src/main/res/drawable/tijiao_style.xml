@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/shapebtn">
+    </item>
+    <item
+        android:drawable="@drawable/shapebtn"
+        android:state_focused="true">
+    </item>
+
+    <item android:drawable="@drawable/tijiao"></item>
+
+</selector>
