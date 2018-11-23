@@ -1,6 +1,6 @@
 # PractiseShopping
 练习项目 ：商城<br />
-简要功能如下:<br />
+简要概述:<br />
 带有CheckBox的Recyclerview适配，以及点击事件<br />
 PopupWindow-仿输入支付密码弹窗<br />
 Button点击效果，矩形Button等<br />
