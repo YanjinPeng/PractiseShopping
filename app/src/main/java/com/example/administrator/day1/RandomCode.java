@@ -7,22 +7,21 @@ import android.graphics.Paint;
 
 import java.util.Random;
 
-/*
+/**
 * 		 验证码生成类
-* 随机生成类型按照字库所有类型决定
+* 随机生成类型按照字库所有元素决定
 * */
 
 public class RandomCode {
 
+	//字库
 	private static final char[] CHARS_Num = {
 			'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
 			'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 			'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-			//'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-			//'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+			'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+			'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
 	};
-
-
 	private static final char[] CHARS = {
 			'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 			'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
@@ -55,9 +54,10 @@ public class RandomCode {
 
 	//生成验证码图片  返回类型为bitmap 直接用imageview.setbitmap()即可
 	//调用样例 imageView.setImageBitmap(RandomCode.getInstance().createBitmap());
-	//					textView.setText(RandomCode.getInstance().getCode());
+	//		  textView.setText(RandomCode.getInstance().getCode());
 	public Bitmap createBitmap() {
-		mPaddingLeft = 0; //每次生成验证码图片时初始化
+		//每次生成验证码图片时初始化
+		mPaddingLeft = 0;
 		mPaddingTop = 0;
 
 		Bitmap bitmap = Bitmap.createBitmap(DEFAULT_WIDTH, DEFAULT_HEIGHT, Bitmap.Config.ARGB_8888);
@@ -74,7 +74,8 @@ public class RandomCode {
 			randomPadding();
 			canvas.drawText(code.charAt(i) + "", mPaddingLeft, mPaddingTop, paint);
 		}
-		//干扰线
+
+		/**干扰线*/
 		for (int i = 0; i < DEFAULT_LINE_NUMBER; i++) {
 			drawLine(canvas, paint);
 		}
@@ -87,14 +88,11 @@ public class RandomCode {
 
 	/**
 	 * 得到图片中的验证码字符串
-	 *
-	 * @return
 	 */
 	public String getCode() {
 		return code;
 	}
-
-	//生成验证码
+	//生成验证码 ascii a-32=A
 	public String createCode() {
 		mBuilder.delete(0, mBuilder.length()); //使用之前首先清空内容
 
@@ -106,7 +104,12 @@ public class RandomCode {
 		return mBuilder.toString();
 	}
 
-	//生成干扰线
+	public void toequals(){
+
+	}
+
+
+	/**生成干扰线*/
 	private void drawLine(Canvas canvas, Paint paint) {
 		int color = randomColor();
 		int startX = mRandom.nextInt(DEFAULT_WIDTH);
@@ -118,24 +121,22 @@ public class RandomCode {
 		canvas.drawLine(startX, startY, stopX, stopY, paint);
 	}
 
-	//随机颜色
+	/**随机颜色*/
 	private int randomColor() {
-		mBuilder.delete(0, mBuilder.length()); //使用之前首先清空内容
-
+		//使用之前首先清空内容
+		mBuilder.delete(0, mBuilder.length());
 		String haxString;
 		for (int i = 0; i < 3; i++) {
 			haxString = Integer.toHexString(mRandom.nextInt(0xFF));
 			if (haxString.length() == 1) {
 				haxString = "0" + haxString;
 			}
-
 			mBuilder.append(haxString);
 		}
-
 		return Color.parseColor("#" + mBuilder.toString());
 	}
 
-	//随机文本样式
+	/**随机文本样式*/
 	private void randomTextStyle(Paint paint) {
 		int color = randomColor();
 		paint.setColor(color);
@@ -143,11 +144,11 @@ public class RandomCode {
 		float skewX = mRandom.nextInt(11) / 10;
 		skewX = mRandom.nextBoolean() ? skewX : -skewX;
 		paint.setTextSkewX(skewX); //float类型参数，负数表示右斜，整数左斜
-//        paint.setUnderlineText(true); //true为下划线，false为非下划线
-//        paint.setStrikeThruText(true); //true为删除线，false为非删除线
+        //paint.setUnderlineText(true); //true为下划线，false为非下划线
+        //paint.setStrikeThruText(true); //true为删除线，false为非删除线
 	}
 
-	//随机间距
+	/**随机间距*/
 	private void randomPadding() {
 		mPaddingLeft += BASE_PADDING_LEFT + mRandom.nextInt(RANGE_PADDING_LEFT);
 		mPaddingTop = BASE_PADDING_TOP + mRandom.nextInt(RANGE_PADDING_TOP);

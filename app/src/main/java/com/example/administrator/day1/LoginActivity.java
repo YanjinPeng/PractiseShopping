@@ -18,6 +18,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * 登录界面
+ * 主要：button响应改变string内容
+ * */
+
 public class LoginActivity extends NoTitleActivity implements View.OnClickListener{
 
     public static final SpannableString eng1 = new SpannableString("Molie/UID");

@@ -200,9 +200,13 @@ public class PayPopupWindow extends PopupWindow implements View.OnClickListener{
 								v6.setText(key);
 								wordlenth[5] = key;
 								allkey = ""+wordlenth[0]+wordlenth[1]+wordlenth[2]+wordlenth[3]+wordlenth[4]+wordlenth[5];
+								/**
+								 * 输入完密码后，执行所需要操作的事务
+								 **/
 								ToastUtils.showToast(MyApplication.getContext(),""+allkey);
 								//dismiss();
 							}else {
+								/**测试看效果*/
 								ToastUtils.showToast(MyApplication.getContext(),""+key);
 							}
 						}

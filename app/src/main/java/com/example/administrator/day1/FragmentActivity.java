@@ -82,6 +82,8 @@ public class FragmentActivity extends NoTitleActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
 
+
+
         mineImage = (ImageView)findViewById(R.id.bot_mine);
         minetext = (TextView)findViewById(R.id.mine);
 

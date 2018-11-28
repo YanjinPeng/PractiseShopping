@@ -29,11 +29,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_toRightOf="@+id/shut_back"
             android:text="请输入支付密码"
-            android:textSize="20sp"
-            android:textColor="#222222"
+            android:textSize="26sp"
+            android:textColor="#111111"
             android:layout_marginTop="10dp"
            />
 

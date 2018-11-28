@@ -3,7 +3,6 @@
     package="com.example.administrator.day1">
     <!--android : name 为获取全局context的完整类名-->
     <application
-
         android:name="com.example.administrator.day1.MyApplication"
 
         android:allowBackup="true"
@@ -25,9 +24,6 @@
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
-            android:name=".HomePageActivity"
-            android:launchMode="singleTask" />
-        <activity
             android:name=".MainActivity"
             android:launchMode="singleTask" />
         <activity
@@ -39,7 +35,8 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".NoTitleActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
         <activity
             android:name=".FragmentActivity"
             android:launchMode="singleTask" />

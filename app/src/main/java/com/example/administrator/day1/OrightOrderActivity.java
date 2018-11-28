@@ -72,9 +72,11 @@ public class OrightOrderActivity extends AppCompatActivity {
 					Intent intent = new Intent(OrightOrderActivity.this, ShopFragmentActivity.class);
 					intent.putExtra("shopcar", 2);
 					startActivity(intent);
+					finish();
 				}else if (i.equals("2")){
 					Intent intent = new Intent(OrightOrderActivity.this, ShopFragmentActivity.class);
 					startActivity(intent);
+					finish();
 				}
 			}
 		});
@@ -98,22 +100,20 @@ public class OrightOrderActivity extends AppCompatActivity {
 					""+new ShopPageActivity().getGoodsName(),
 					""+new ShopPageActivity().getGoodsPrice());
 			goodsList.add(n1);
-		}else if (i.equals("1")){
-			// 存储选中商品的价格以及名称集合
 
-			for (int i =goodsList.size()-1;i>-1;i--){
-				goodsList.remove(i);
-				adapter.notifyItemRemoved(i);//**删除
-			}
+		}else if (i.equals("1")){
+
 			AddDataList();
 			allPrice = ""+new ThreadShopActivity().getPriceData();
 
 			//goodsList = new ThreadShopActivity().getListData();
 		}
-
 		return allPrice;
 	}
 
+	/**
+	 * 添加数据
+	 * */
 	public void AddDataList(){
 		for (int i=0;i<goodsmap.size();i++) {
 			String [] gms = new String[2];

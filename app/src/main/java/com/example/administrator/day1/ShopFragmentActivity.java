@@ -16,7 +16,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShopFragmentActivity extends AppCompatActivity implements View.OnClickListener{
+public class ShopFragmentActivity extends NoTitleActivity implements View.OnClickListener{
     /**
      * 四个导航
      */
@@ -57,10 +57,6 @@ public class ShopFragmentActivity extends AppCompatActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_fragment);
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null){
-            actionBar.hide();//隐藏系统标题栏
-        }
 
         mineImage = (ImageView)findViewById(R.id.shop_bot_mine);
         minetext = (TextView)findViewById(R.id.shop_mine);

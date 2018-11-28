@@ -25,6 +25,8 @@ public class RegisterActivity extends NoTitleActivity implements View.OnClickLis
                 case CreateCode:
                     imageView.setImageBitmap(RandomCode.getInstance().createBitmap());
                     randomcode = RandomCode.getInstance().getCode();
+                    //.equalsIgnoreCase()不区分 英文字母大小写 对比
+                    ToastUtils.showToast(RegisterActivity.this,""+randomcode);
                     //textView.setText(RandomCode.getInstance().getCode());
                     break;
             }

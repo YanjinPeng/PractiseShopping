@@ -82,6 +82,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.ViewHo
                  *  iItem.setOnItem(position);
                  * */
                 iItem.setOnItem(position,lname,lprice);
+
                 context.startActivity(intent);
             }
         });

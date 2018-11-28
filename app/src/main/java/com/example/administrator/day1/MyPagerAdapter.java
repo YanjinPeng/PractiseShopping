@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import java.util.List;
 
 /**
- *viewpager加图片滑动适配器
+ *viewpager+imageview滑动适配器
  *
- */
+ **/
 public class MyPagerAdapter extends PagerAdapter {
 	private List<View> list;
 

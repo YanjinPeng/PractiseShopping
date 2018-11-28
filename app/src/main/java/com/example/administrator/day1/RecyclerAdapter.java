@@ -19,11 +19,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     String dela;
     String nameB,priceB;
 
-	IItem iItem;
+    /*****************/
+	IItem iItem;//创建接口对象
 	//此方法就是连接接口与activity的桥梁
-	public void setiItem(IItem iItem) {
+	public void setiItem(IItem iItem) {//创建含有接口引用的方法
 		this.iItem = iItem;
 	}
+	/*****************/
 
     public RecyclerAdapter(List<Goods> goodsList,boolean show,Context context) {
         mgoodsList = goodsList;

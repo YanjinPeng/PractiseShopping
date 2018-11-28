@@ -37,11 +37,10 @@ public class ThreadShopActivity extends Fragment implements View.OnClickListener
 	public static Map<Integer, Boolean> map = new HashMap<>();
 
 	// 存储选中商品的价格以及名称集合
-	public static Map<Integer,String []> goods_map = new HashMap<>();
+	public static Map<Integer,String []> goods_map ;
 	public static String [] gm_s ;
 	/**存储选中商品的价格以及名称集合**/
 	public static List<GoodsPrice> goodsList1 = new ArrayList<>();
-
 	public static int price = 0;
 	private int pr1;
 	boolean a,b;
@@ -151,7 +150,8 @@ public class ThreadShopActivity extends Fragment implements View.OnClickListener
 					SharedPreferences.Editor editordz = prefdz.edit();
 					editordz.putString("rightback","1");
 					editordz.commit();
-
+					int n =0;
+					goods_map = new HashMap<>();
 					//copy goods
 					for (int i=0;i<goodsList.size();i++){
 						boolean is = map.get(i);//当前CheckBox状态
@@ -160,12 +160,8 @@ public class ThreadShopActivity extends Fragment implements View.OnClickListener
 							GoodsPrice goods1 = goodsList.get(i);
 							gm_s [0]= ""+goods1.getGoods();
 							gm_s [1]= ""+goods1.getPrice();
-							//GoodsPrice n1 = new GoodsPrice(R.drawable.ic_launcher_background,""+gm_s[0],goods1.getPrice());
-							//goodsList1.add(n1);
-							goods_map.put(i,gm_s);
-							//adapter.notifyItemRemoved(i);//**删除
-							//adapter.notifyItemRangeChanged(0,goodsList.size()-0);//动画效果
-							//adapter.notifyDataSetChanged();
+							goods_map.put(n,gm_s);
+							n++;
 						}
 					}
 					/********************************/

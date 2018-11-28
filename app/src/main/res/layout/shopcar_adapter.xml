@@ -4,17 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_margin="5dp"
-    android:background="#eeeeee"
+    android:background="#efefef"
     android:padding="15dp"
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal">
+
     <CheckBox
         android:id="@+id/shopcar_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:focusable="false"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginRight="15dp"
+        android:focusable="false" />
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
