@@ -9,7 +9,7 @@
     android:paddingLeft="20dp"
     android:orientation="vertical"
     android:background="@drawable/login_bg"
-    tools:context=".LoginActivity">
+    tools:context=".LoginPager.LoginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

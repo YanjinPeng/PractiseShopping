@@ -3,9 +3,12 @@ package com.example.administrator.day1;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.administrator.day1.LoginPager.LoginActivity;
+import com.example.administrator.day1.SQLite.SQLiteManager;
+import com.example.administrator.day1.StyleActivity.NoTitleActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

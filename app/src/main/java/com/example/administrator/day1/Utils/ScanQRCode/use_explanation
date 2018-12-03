@@ -1,0 +1,19 @@
+
+
+集成zxing框架实现扫一扫，生成二维码
+(参考https://github.com/yuzhiqiang1993/zxing)
+
+build.gradle(app)添加 implementation 'com.github.yuzhiqiang1993:zxing:2.2.1'
+
+build.gradle(project)添加  maven { url 'https://jitpack.io' }
+用到的权限 Manifest中声明(危险权限需要动态申请)
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 需要申请 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 需要申请 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+类中使用参考ScanQRCodeActivity！
